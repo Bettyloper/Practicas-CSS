@@ -1,0 +1,118 @@
+:root { 
+    --blue:#08003b; 
+    --grey: #9ea8bd; 
+    --grey2: #e2e6ee; 
+    --primary: #ca097a; 
+    --white: #ffffff; 
+    --heading1: 700 1.25rem/normal Roboto; 
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: var(--blue);
+    padding:60px;
+    margin:50px 100px;
+}
+
+.Contenedor-formulario{
+    border: 20px solid;
+    border-radius: 20px;
+    border-color: #ffffff;
+    margin: auto;
+    width: 390px;
+    height: 590px;
+    background-color: var(--white);
+    
+}
+.Formulario{
+    padding-top: 20px;
+    margin: 30px;
+    margin-top: 10px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.Form2{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    width: 260px;
+}
+
+h4{
+    text-align: center;
+    font: var(--heading1);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p{
+    font-size: 1rem;
+    margin: 3px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.controles{
+    border-radius: 15px;
+    background-color: #e2e6ee;
+    font-size:  0.85rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 10px;
+    border: none;
+    outline: none;
+  
+}
+
+.boton {
+    font-size: 0.75rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+#Fecha, #CVV {
+   width: 120px;
+   
+}
+
+#Confirmar{
+    background-color: #ca097a;
+    color: #ffffff;
+    opacity: 0.33;
+
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    margin-left: 150px;
+    
+}
+
+.Fecha{
+    margin: 10px;
+    margin-left: 30px;
+}
+
+
+@media screen and (max-width:610px){
+    body {
+        margin-left: 80px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:560px){
+    .Contenedor-formulario{
+        max-width: 420px;
+        height: 620px;
+    }
+}

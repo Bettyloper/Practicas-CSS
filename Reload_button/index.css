@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap");
+
+*{
+    margin:0;  
+    padding:0;
+    box-sizing:border-box;
+
+    }
+
+    .reload-btn{
+        all:unset;        
+        height:50px;  
+        width:160px;
+        background:#232323;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        border-radius:6px;
+        display:flex;
+        align-items:center;
+        cursor:pointer;
+        }  
+        
+.reload-btn .reload-icon{
+        height:20px;  
+        width:20px;
+        background:white;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:9px;
+        border-radius:100%;
+        margin-left:30px;
+            }    
+
+/* Animacion que hace girar el icono*/            
+
+.reload-btn .reload-icon.rotate{
+    animation:rotate .4s linear infinite; 
+    background:lightgrey;
+    }
+
+@keyframes rotate{
+        0%{
+        transform:rotate(0deg);       
+    }100%{
+        transform:rotate(360deg);       
+    }
+}
+
+/* Estilos para el texto */ 
+.reload-btn span{
+    font-size:12px;
+    margin-left:10px;
+    color:white;
+    }
+    
+
+/* Estilos de la linea gris que despues se vuelve verde */     
+.reload-btn .line{
+    height:2px; 
+    width:100%;
+    background:#696969;
+    position:absolute;
+    bottom:0;
+    overflow:hidden;
+    display:none;
+    transition:all 1s;
+        }    
+    
+    .reload-btn .line::before{
+    content:"";
+    height:2px;
+    width:100%;
+    background:#80FF72;
+    position:absolute;
+    transform:translateX(-170px);
+    animation:animate .8s linear infinite;
+    }
+    
+    
+    @keyframes animate{
+    0%{
+    transform:translateX(-170px)        
+    } 
+    100%{
+    transform:translateX(170px)        
+    }
+    }
